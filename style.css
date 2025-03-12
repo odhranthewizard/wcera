@@ -1,0 +1,75 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bgimg {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #00a0b0 0%, #ffffff 76%, #b4b4b4 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #00a0b0 0%,
+    #ffffff 76%,
+    #b4b4b4 100%
+  );
+  background: linear-gradient(to bottom, #00a0b0 0%, #ffffff 76%, #b4b4b4 100%);
+  height: 100%;
+  /* Center the background image */
+  background-position: center;
+  /* Scale and zoom in the image */
+  background-size: cover;
+  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+  position: relative;
+  /* Add a white text color to all elements inside the .bgimg container */
+  color: black;
+  /* Add a font */
+  font-family: "Courier New", Courier, monospace;
+  /* Set the font-size to be responsive */
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+/* Position text in the middle */
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  padding: 1rem;
+}
+
+/* Style the <hr> element */
+hr {
+  margin: 1rem auto;
+  width: 60%;
+}
+
+img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 600px) {
+  .bgimg {
+    font-size: 0.9rem;
+  }
+  
+  .middle {
+    width: 85%;
+  }
+  
+  hr {
+    width: 70%;
+  }
+}
